@@ -10,15 +10,15 @@
 }
 
 /* MOBILE */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   #timeline ul li {
     margin-left: 20px;
     color: #f4f4f4;
   }
   #timeline ul li div {
-    width: (100vw - 100px);
+    width: calc(100vw - 150px);
   }
-  #timeline ul li:nth-child(even) div {
-    left: 40px;
+  #timeline ul li:nth-child(odd) div {
+    left: 90px;
   }
 }
