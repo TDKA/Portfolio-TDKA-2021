@@ -47,7 +47,7 @@ p {
   font-family: "JetBrains Mono", monospace;
 }
 
-/* BUTTONS */
+/***** BUTTONS ******/
 
 .btn-works {
   background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
@@ -70,7 +70,8 @@ p {
 
   transition: 0.5s ease-in-out;
 }
-/* .btn-cv */
+
+/***** .btn-cv *****/
 #btn-cv {
   margin-top: 40px;
 }
@@ -162,9 +163,9 @@ button[aria-expanded="true"] .navbar-toggler-icon::after {
   top: 0;
   transform: rotate(-45deg);
 }
-/* FIn BURGER */
+/******* FIn BURGER *******/
 
-/* HEADER */
+/******* HEADER **********/
 
 header {
   color: #f4f4f4;
@@ -179,7 +180,7 @@ header {
   font-size: 1.7rem;
 }
 
-/* Showcase  */
+/*********** Showcase  ************/
 
 #showcase {
   color: #f4f4f4;
@@ -216,7 +217,7 @@ header {
   margin-top: 10px;
 }
 
-/* SECTION SKILLS */
+/*********** SECTION SKILLS *************/
 #skills {
   color: #f4f4f4;
   margin-top: 120px;
@@ -345,7 +346,7 @@ header {
 #timeline ul li:not(:first-child) {
   padding-top: 100px;
 }
-/*Boxes */
+/***Boxes ****/
 #timeline ul li div {
   position: relative;
   bottom: 0;
@@ -355,25 +356,25 @@ header {
   padding: 1rem;
   transition: all 0.8s ease-in-out;
 }
-/* Show box */
+/***** Show box ******/
 #timeline ul li.show div {
   transform: none;
   visibility: visible;
   opacity: 1;
 }
 
-/* left side boxes */
+/****** left side boxes *****/
 #timeline ul li:nth-child(odd) div {
   left: -430px;
   transform: translate(-200px 0);
 }
-/* right side */
+/***** right side ****/
 #timeline ul li:nth-child(even) div {
   left: 40px;
   transform: translate(200px 0);
 }
 
-/* Dots */
+/***** Dots ******/
 #timeline ul li::after {
   content: "";
   position: absolute;
@@ -460,4 +461,6 @@ footer .footer::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  border-left: 2px solid #b44292;
+  border-bottom: 2px solid #e26047;
 }
