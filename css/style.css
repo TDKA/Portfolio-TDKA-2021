@@ -93,6 +93,7 @@ p {
   top: 0;
   left: 0;
   box-shadow: 0 5px 20px rgba(124, 53, 129, 0.726);
+  cursor: pointer;
 }
 
 @keyframes animat1 {
