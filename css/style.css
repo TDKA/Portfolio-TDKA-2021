@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&e&family=Dancing+Script:wght@700&family=JetBrains+Mono:wght@300display=swap");
+
+:root {
+  --linear-text: -webkit-linear-gradient(25deg, #b24592, #f15f79 95%);
+}
+
+body {
+  font-family: "Amiko", sans-serif;
+  background: #000;
+}
+/* Particles */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -111;
+}
+
+h3 {
+  background: linear-gradient(
+    45deg,
+    #7c3581e0 2%,
+    rgb(226, 96, 71) 50%,
+    #e99343 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+}
+p {
+  font-family: "JetBrains Mono", monospace;
+}
+
+#logo {
+  font-size: 40px;
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: bold;
+}
+#text-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* BUTTONS */
+
+.btn-works {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(124, 53, 129, 0.726);
+}
+.btn-works:hover {
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(45deg, #e99343 5%, #e26047 50%, #7c3581 90%);
+  padding: 25px 35px;
+}
+
+.btn-my:hover {
+  background: -webkit-linear-gradient(25deg, #b44292, #d14e66 95%);
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+
+  transition: 0.5s ease-in-out;
+}
+/* .btn-cv */
+#btn-cv {
+  margin-top: 40px;
+}
+
+.btn-cv {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  padding: 25px 70px;
+  border-radius: 30px;
+  margin-top: 60px;
+  position: relative;
+  animation: animat1 9s ease-in-out;
+  animation-iteration-count: infinite;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 20px rgba(124, 53, 129, 0.726);
+}
+
+@keyframes animat1 {
+  25% {
+    top: 0;
+    left: 500px;
+  }
+  50% {
+    top: -500px;
+  }
+  75% {
+    top: 10px;
+    left: 1200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/******* BURGER ************ */
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler-icon {
+  transition: all 0.3s ease;
+  /* espace de travail pour les ::before et ::after */
+  position: relative;
+  /* style de la barre du milieu */
+  width: 40px;
+  height: 3px;
+  background: #7c3581;
+}
+
+/* Style pour les barres du haut et du bas */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #7c3581;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  top: 10px;
+}
+
+button[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+button[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+button[aria-expanded="true"] .navbar-toggler-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* FIn BURGER */
+
+/* HEADER */
+
+header {
+  color: #f4f4f4;
+}
+
+#header .navbar {
+  padding: 20px 0;
+}
+
+#header .navbar ul li a {
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+}
+
+/* Showcase  */
+
+#showcase {
+  color: #f4f4f4;
+  padding: 80px 0;
+}
+#present {
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+#present .name {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+#photo {
+  background: #7c3581;
+  margin-bottom: 100px;
+}
+#photo img {
+  width: 75%;
+  object-fit: contain;
+  object-position: center;
+  z-index: -1;
+  margin-left: 75px;
+  border-radius: 180px;
+}
+
+#presentation ul li i {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* SECTION SKILLS */
+#skills {
+  color: #f4f4f4;
+  margin-top: 120px;
+  margin-bottom: 200px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+#skills article h1 {
+  border: 2px solid #7c3581;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+#skills article p {
+  font-family: "JetBrains Mono", monospace;
+}
+
+#skills article i {
+  color: #7c3581;
+}
+
+/********** SECTION WORKS ************/
+
+#works {
+  color: #f4f4f4;
+  margin-bottom: 180px;
+  font-family: "JetBrains Mono", monospace;
+}
+#works h1 {
+  border: 2px solid #7c3581;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+#works .img-thumbnail {
+  object-fit: contain;
+  object-position: center;
+}
+#works .container {
+  border-radius: 20px;
+  background: #131415;
+  position: relative;
+}
+#works .container::before,
+#works .container::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    #7c3581,
+    #e26047,
+    #7c3581,
+    #e99343,
+    #7c3581,
+    #e26047,
+    #e99343,
+    #e26047
+  );
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-size: 500%;
+  z-index: -1;
+  transform: scale(1.02);
+}
+
+#works .container::after {
+  filter: blur(30px);
+  animation: animate 10s infinite;
+}
+
+@keyframes anim1 {
+  25% {
+    background-color: #e26047;
+    color: #7c3581;
+  }
+  50% {
+    background-color: #e99343;
+    color: #9429ec;
+  }
+  75% {
+    background-color: #7c3581;
+    color: #e26047;
+  }
+  100% {
+    background-color: #e99343;
+    color: #e26047;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* ********* Section TIMELINE********************************************* */
+
+#timeline {
+  color: #f4f4f4;
+  margin: 100px 0;
+  font-family: "JetBrains Mono", monospace;
+}
+#timeline h1 {
+  border: 2px solid #7c3581;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+/* LINE  */
+#timeline ul li {
+  position: relative;
+  background: linear-gradient(45deg, #7c3581 2%, #e26047 50%, #e99343 90%);
+  width: 7px;
+  margin: 0 auto;
+  text-shadow: 0px 3px 7px, rgba(226, 96, 71, 0.4);
+}
+#timeline ul li:not(:first-child) {
+  padding-top: 100px;
+}
+/*Boxes */
+#timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 1rem;
+  transition: all 0.8s ease-in-out;
+}
+/* Show box */
+#timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* left side boxes */
+#timeline ul li:nth-child(odd) div {
+  left: -430px;
+  transform: translate(-200px 0);
+}
+/* right side */
+#timeline ul li:nth-child(even) div {
+  left: 40px;
+  transform: translate(200px 0);
+}
+
+/* Dots */
+#timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  transform: translateX(-50%);
+  transition: background 0.5s ease-in-out;
+}
+
+/*************footer*********************************** footer */
+
+#footer {
+  margin-top: 140px;
+  color: #fff;
+}
+#footer #logo {
+  position: relative;
+  font-size: 40px;
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: bold;
+}
+
+#footer #logo::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 2px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e99343;
+}
+#footer #logo::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 2px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #e26047;
+}
+
+#footer .fab:hover {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  transform: rotate(360deg);
+}
+
+#footer ul li i {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

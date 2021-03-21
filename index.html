@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/87813d4957.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>TDKA.</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header id="header">
+
+        <nav class="navbar navbar-expand-lg ">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 id="logo">TDKA.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                    <ul class="navbar-nav align-items-center justify-content-between ">
+                        <li class="nav-item  btn-my mx-4">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item  btn-my mx-4">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item  btn-my mx-4">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item  btn-my mx-4">
+                            <a class="nav-link " href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- SHOWCASE -->
+
+        <div id="showcase" class="container">
+            <div>
+                <ul class="row align-items-center justify-content-center">
+                    <li id="presentation" class="col-md-6 mb-5">
+                        <h1 id="present" class="mb-5">
+                            Hello, je suis <br>
+                            <span class="name">Teodor KOBILAROV</span>, <br> web développeur junior <br> basé à Lyon
+                        </h1>
+                        <p>
+                            Motivé et organisé, je saurais être autonome <br> dans mes missions et créatif dans mes
+                            réalisations <br> afin
+                            d'agrandir le volume de mes compétences et <br> vous accompagner dans ce monde merveilleux
+                            <br> qu'est le
+                            numérique.
+                        </p>
+                        <ul>
+                            <li><a href="https://goo.gl/maps/oKpQbgDwzqHwCv1b9" target="_blank"><i class="fas fa-home fa-2x home"></i> Lyon, France</a></li>
+                            <li><a href="tel: +33635362732"><i class="fas fa-phone-volume fa-2x     phone"></i>+ (33) 6 35 36 27 32</a></li>
+                            <li><a href="mailto:teodor.kobilarov@gmail.com"><i class="fas fa-envelope fa-2x  mail"></i> teodor.kobilarov@gmail.com</a></li>
+                            <li id="btn-cv"><a href="cv.pdf" download class="btn-cv">CV</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="photo" class="col-6 rounded-pill">
+                        <img src="./img/teo.png" alt="" class="rounded-pill">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- FIN HEADER -->
+
+    <main>
+        <section id="skills" class="container">
+            <div class="row">
+                <article class="col-md-12 mx-auto text-center">
+                    <div class="shadow">
+                        <h1 class="display-4">Compétences</h1>
+                        <p>Mes langages & outils</p>
+                        <ul class="row mt-5">
+                            <li class="col-md-4">
+                                <div>
+                                    <ul>
+                                        <h3 class="mb-3">Intégration web</h3>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>SASS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div>
+                                    <ul>
+                                        <h3 class="mb-3">Développement</h3>
+                                        <li>PHP</li>
+                                        <li>Angular</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div>
+                                    <ul>
+                                        <h3 class="mb-3">Base de données</h3>
+                                        <li>MySQL</li>
+                                        <li>API</li>
+                                        <li>MariaDB</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTIONS WORKS -->
+        <section id="works" class=" album py-5  text-center">
+            <div class="container p-5">
+                <h1 class="display-4">Projets</h1>
+                <p>Découvrez certains de mes projets</p>
+                <ul class="row items mt-5">
+                    <li class="item1 col-md-4">
+                        <div class="card mb-4 box-shadow item-img border-0">
+                            <img src="./img/kaffee.jpg" alt="">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-text-wrap mt-md-5">
+                                <a href="./kaFFe/index..html" class="text-category btn-works" target="_blank">KaFFe</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item1 col-md-4">
+                        <div class="card mb-4 box-shadow item-img border-0">
+                             <img src="./img/tic-tac-toe.jpg" alt=""> 
+                        </div>
+                        <div class="item-text">
+                            <div class="item-text-wrap mt-md-5">
+                                <a href="./tic-tac-toe-master/tic-tac.html" class="text-category btn-works" target="_blank">Tic-Tac-Toe</a> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item1 col-md-4">
+                        <div class="card mb-4 box-shadow item-img border-0">
+                            <img src="./img/speedtyper.jpg" alt="">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-text-wrap mt-md-5">
+                                <a href="./typing-game/index.html" class="text-category btn-works" target="_blank">Speed Taper</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <!-- SECTION TIMELINE -->
+        <section id="timeline">
+
+            <div class="container p-5 card-link text-center">
+                <h1 class="display-4">Formation</h1>
+                <p class="">Mes qualifications</p>
+            </div>
+
+            <ul class="text-center py-5">
+                <li class=" pt-5 ">
+                    <div>
+                        <h3>2020 - 2021: Développement Web & Web Mobile / HUMAN BOOSTER - Villeeurbanne</h3>
+                        <p>Titre pro RNCP de Niveau 5 (BAC +2) <br> Front End | Back end <br>
+                            Git/Github, HTML5, CSS3, Bootstrap, JavaScript, Angular, MySQL, <br> PHP, Linux, Wordpress.
+                        </p>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <h3>2019 - 2020: Développement Web en autoformation</h3>
+                        <p>
+                            Teamtreehouse, Freecodecamp, Udemy. <br>
+                            HTML5, CSS3, Sass, Bootstrap.
+
+                        </p>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <h3>2019 - 2020: Cours intensifs de français / PLATINIUM LANGUES - Lyon</h3>
+                        <p>Certificate Bright Language - B2+</p>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <h3>2015 BAC(Anglais / Biologie) / SOFIA-Bulgarie</h3>
+                        <p> BAC obtenu au sein de Lycée du général Hristo Botev(21). </p>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <h3>LANGUES</h3>
+                        <p>Bulgare <br> Français <br> Anglais <br> Russe</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        </div>
+
+        <!-- SECTION PROCESSS -->
+
+
+
+        <!--  -->
+    </main>
+
+    <!-- FOOTER -->
+  
+
+    <footer id="footer" class="container">
+     
+        <a class="navbar-brand text-center" href="index.html">
+            <h1 id="logo">TDKA.</h1>
+        </a>
+        <div class="row justify-content-between align-items-center py-5">
+            <ul class="col-md-6 text-center ">
+                <div class="shadow pe-5">
+                    <li>
+                        <p> 2021 &copy; TDKA. </p>
+                    </li>
+                    <li><a href="#" class="about">
+                            <p>About me</p>
+                        </a></li>
+                    <li>
+                        <a href=" https://www.linkedin.com/in/teodor-kobilarov-b9859b188/" target="_blank"><i class="fab fa-linkedin fa-2x "></i></a>
+                        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x  px-5"></i></a>
+                        <a href="https://github.com/TDKA" target="_blank"><i class="fab fa-github  fa-2x"></i></a>
+
+                    </li>
+                </div>
+            </ul>
+
+            <ul class="col-md-6  d-flex justify-content-between  align-items-center  ">
+
+                <li class="">
+                    <div class="shadow">
+                        <h3>Adresse</h3>
+                        <p>69003 Lyon</p>
+                    </div>
+                </li>
+                <li>
+
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p>+33 6 35 36 27 32</p>
+                    </div>
+                </li>
+                <li>
+
+                    <div>
+                        <h3>Mail</h3>
+                        <p><a href="mailto:teodor.kobilarov@gmail.com"> teodor.kobilarov@gmail.com</a></p>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"> </script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
