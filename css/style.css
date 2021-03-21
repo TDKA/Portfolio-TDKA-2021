@@ -437,6 +437,12 @@ footer form .bouton {
   border: none;
   margin-top: -35px;
   position: relative;
+  box-shadow: 0 3px 10px #b44292;
+}
+footer form .bouton:hover {
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(45deg, #e99343 5%, #e26047 50%, #7c3581 90%);
+  padding: 25px 35px;
 }
 
 footer .footer::before {
@@ -448,57 +454,9 @@ footer .footer::before {
   margin: 50px 0 30px;
 }
 
-#footer #contact {
+#footer #contact1 {
   background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   display: inline-block;
 }
-
-/* #footer {
-  margin-top: 140px;
-  color: #fff;
-}
-#footer #logo {
-  position: relative;
-  font-size: 40px;
-  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Annie Use Your Telescope", cursive;
-  font-weight: bold;
-}
-
-#footer #logo::after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 2px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #e99343;
-}
-#footer #logo::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 2px;
-  bottom: 20px;
-  left: 20px;
-  background-color: #e26047;
-}
-
-#footer .fab:hover {
-  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 60px;
-  transform: rotate(360deg);
-}
-
-#footer ul li i {
-  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
