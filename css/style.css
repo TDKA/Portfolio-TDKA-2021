@@ -398,7 +398,7 @@ footer ul {
   margin-top: 55px;
   width: 60%;
 }
-#footer .fab:hover {
+/* #footer .fab:hover {
   background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -410,7 +410,7 @@ footer ul {
   background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 footer form *:not(.bouton) {
   width: 80%;
@@ -463,4 +463,119 @@ footer .footer::before {
   display: inline-block;
   border-left: 2px solid #b44292;
   border-bottom: 2px solid #e26047;
+}
+
+/* Social icons */
+#social {
+  position: relative;
+  transform: rotate(-3deg) skew(3deg);
+  transform-style: preserve-3d;
+}
+#social li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px;
+}
+#social li:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
+  transform-origin: top;
+  transform: skewX(-41deg);
+}
+#social li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
+  transform-origin: right;
+  transform: skewY(-41deg);
+}
+#social li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+#social li:hover span {
+  z-index: 1000;
+  transition: 0.3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#social li:hover span:nth-child(5) {
+  transform: translate(30px, -30px);
+  opacity: 1;
+}
+#social li:hover span:nth-child(4) {
+  transform: translate(20px, -20px);
+  opacity: 0.8;
+}
+#social li:hover span:nth-child(3) {
+  transform: translate(10px, -10px);
+  opacity: 0.6;
+}
+#social li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+#social li:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
+}
+#social li:nth-child(1):hover span {
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
+}
+#social li:nth-child(2):hover span {
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
+}
+#social li:nth-child(3):hover span {
+  background: linear-gradient(
+    45deg,
+    #7c3581 5%,
+    #e26047 50%,
+    #e99343 90%
+  ) !important;
 }
