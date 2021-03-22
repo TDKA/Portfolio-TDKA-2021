@@ -177,14 +177,13 @@ header {
 
 #header .navbar ul li a {
   letter-spacing: 1px;
-  font-size: 1.7rem;
 }
 
 /*********** Showcase  ************/
 
 #showcase {
   color: #f4f4f4;
-  padding: 80px 0;
+  padding: 80px 0 40px;
 }
 #present {
   letter-spacing: 2px;
@@ -195,6 +194,10 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
+}
+
+#contactme:hover {
+  font-size: 2rem;
 }
 #photo {
   background: #7c3581;
