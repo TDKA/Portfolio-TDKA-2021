@@ -65,7 +65,7 @@ p {
 .btn-my:hover {
   background: -webkit-linear-gradient(25deg, #b44292, #d14e66 95%);
   color: #fff;
-  padding: 20px 30px;
+  padding: 10px 10px;
   border-radius: 10px;
 
   transition: 0.5s ease-in-out;
@@ -90,7 +90,7 @@ p {
   border-radius: 30px;
   margin-top: 60px;
   position: relative;
-  animation: animat1 9s ease-in-out;
+  animation: animat1 10s ease-in-out;
   animation-iteration-count: infinite;
   top: 0;
   left: 0;
