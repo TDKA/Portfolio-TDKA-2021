@@ -234,9 +234,20 @@ header {
   display: inline-block;
   padding: 10px 10px;
 }
+#skills article div div ul li {
+  font-size: 1.85rem;
+}
+
+#skills article div div ul li:hover {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(50deg, #b44292, #d14e66 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #skills article p {
   font-family: "JetBrains Mono", monospace;
+  font-size: 1.6rem;
 }
 
 #skills article i {
