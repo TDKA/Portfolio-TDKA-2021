@@ -181,10 +181,17 @@ header {
 }
 
 /*********** Showcase  ************/
+#txt-type {
+  background: linear-gradient(45deg, #7c3581 5%, #e26047 50%, #e99343 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+}
 
 #showcase {
   color: #f4f4f4;
-  padding: 80px 0 40px;
+  padding: 50px 0 40px;
 }
 
 #present {
@@ -219,7 +226,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /*********** SECTION SKILLS *************/
